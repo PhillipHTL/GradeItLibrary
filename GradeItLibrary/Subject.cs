@@ -4,10 +4,24 @@ using System.Text;
 
 namespace GradeItLibrary
 {
-    class Subject
+    public sealed class Subject
     {
-        public int Id;
-        public string Name;
-        public int NrOfPeriods;
+        //Membervariables
+
+        private int id;
+        private string name;
+        private int nrofperiods;
+
+        //Constructor(s)
+        public Subject(int Id, string Name, int Nrofperiods)
+        {
+            id = Id;
+            name = Name;
+            nrofperiods = Nrofperiods;
+        }
+        //Properties
+        public int Id { get => id; set => id = value; }
+        public string Name { get => name; set => name = value; }
+        public int Nrofperiods { get => nrofperiods; set => nrofperiods = value; }
     }
 }

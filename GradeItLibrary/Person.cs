@@ -3,14 +3,24 @@ using System.Collections.Generic;
 
 namespace GradeItLibrary
 {
-    public class Person
+    public abstract class Person
     {
-        public int Id;
-        public string FirstName;
-        public string LastName;
-        public string Email;
+        //Membervariables
+        internal int id;
+        internal string firstname;
+        internal string lastname;
+        internal string email;
 
+        //Constructor(s)
+        protected Person(int Id, string FirstName, string LastName, string Email)
+        {
+            id = Id;
+            firstname = FirstName;
+            lastname = LastName;
+            email = Email;
+        }
 
+       
     }
 
 
